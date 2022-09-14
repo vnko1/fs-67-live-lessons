@@ -1,0 +1,82 @@
+/*
+:root {
+    --brand-color: rgb(230, 167, 31);
+    --font-size: 2px;
+}
+or
+:root {
+  --brand-color: rgb(230, 167, 31);
+}
+:root {
+  --font-size: 2px;
+}
+*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(34, 17, 212);
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+/* -----------------Header------------------------- */
+.header-link,
+.header-tel {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.header-link:hover,
+.header-link:focus {
+  color: #ff6c00;
+}
+.header-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background-color: cyan;
+  color: #ffffff;
+  cursor: pointer;
+}
+/* -----------------------Hero------------------------ */
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+.hero-link:hover,
+.hero-link:focus {
+  color: #ff6c00;
+}
+.hero-primary-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+.hero-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.hero-secondary-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
