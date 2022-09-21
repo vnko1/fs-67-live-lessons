@@ -11,11 +11,53 @@
 body {
   font-family: var(--main-font);
 }
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
+}
+
+.section {
+  padding: 120px 0;
 }
 
 .section-title {
@@ -34,6 +76,12 @@ body {
 }
 
 .btn {
+  min-width: 120px;
+  padding: 12px 20px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  text-align: center;
+  background-color: transparent;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -49,20 +97,10 @@ body {
   background-color: var(--accent-color);
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 /* -----------------Header------------------------- */
 .header {
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: grey;
 }
 
@@ -102,11 +140,21 @@ body {
   color: var(--accent-color);
 }
 
+.hero-container {
+  padding: 272px 100px 208px;
+  /* margin-top: 272px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-bottom: 208px; */
+}
+
 .hero-primary-text {
+  margin-bottom: 20px;
   color: rgba(157, 164, 189, 0.6);
 }
 
 .hero-title {
+  margin-bottom: 20px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 72px;
@@ -116,6 +164,7 @@ body {
 }
 
 .hero-secondary-text {
+  max-width: 360px;
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
@@ -125,14 +174,17 @@ body {
 /* -----------------------About------------------------ */
 
 .about-primary-text {
+  margin-bottom: 20px;
   color: var(--secondary-title-color);
 }
 
 .about-title {
+  margin-bottom: 20px;
   color: var(--secondary-title-color);
 }
 
 .about-secondary-text {
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
@@ -141,6 +193,7 @@ body {
 }
 
 .about-text {
+  margin-bottom: 42px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.86;
@@ -159,11 +212,18 @@ body {
 }
 
 .prices-text {
+  margin-bottom: 19px;
   color: rgba(157, 164, 189, 0.6);
 }
 
 .prices-title {
+  margin-bottom: 45px;
   color: var(--main-title-color);
+}
+
+.prices-list {
+  padding: 30px 20px;
+  outline: 2px solid tomato;
 }
 
 .prices-item-text {
@@ -175,32 +235,46 @@ body {
 }
 
 .prices-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 44px;
   color: var(--main-btn-color);
 }
 
 /* -----------------------Benefits------------------------ */
 
+.benefits-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  outline: 2px solid tomato;
+  text-align: center;
+}
+
 .benefits-item-primary-text {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.05em;
   color: #303030;
 }
+
 .benefits-item-secondary-text {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  text-align: center;
+  /* text-align: center; */
   color: #303030;
 }
 
 .benefits-primary-text {
+  margin-bottom: 20px;
   color: #303030;
 }
 
 .benefits-title {
+  margin-bottom: 20px;
   color: #303030;
 }
 
@@ -214,14 +288,22 @@ body {
 /* -----------------------Barbers------------------------ */
 
 .barbers-text {
+  margin-bottom: 20px;
   color: #303030;
 }
 
 .barbers-title {
+  margin-bottom: 44px;
   color: #303030;
 }
 
+.barbers-item-content {
+  margin-top: 30px;
+  /* padding-top: 30px; */
+}
+
 .barbers-item-title {
+  margin-bottom: 8px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.39;
@@ -231,12 +313,21 @@ body {
 }
 
 .barbers-item-text {
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+.barbers-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: tomato;
+  display: block;
 }
 
 /* -----------------------Gallery------------------------ */
