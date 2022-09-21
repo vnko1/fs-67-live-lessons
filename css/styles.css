@@ -78,6 +78,7 @@ img {
 .btn {
   display: inline-block;
   min-width: 120px;
+  /* min-height: 12px; */
   padding: 12px 20px;
   border: 1px solid #ff6c00;
   border-radius: 25px;
