@@ -76,6 +76,7 @@ img {
 }
 
 .btn {
+  display: inline-block;
   min-width: 120px;
   padding: 12px 20px;
   border: 1px solid #ff6c00;
@@ -88,7 +89,6 @@ img {
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  cursor: pointer;
 }
 
 .btn:hover,
