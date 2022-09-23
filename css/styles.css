@@ -34,6 +34,7 @@ ul {
 
 img {
   display: block;
+  margin: 0;
 }
 
 .visually-hidden {
@@ -52,6 +53,7 @@ img {
 .list {
   list-style: none;
 }
+
 .link {
   text-decoration: none;
 }
@@ -79,7 +81,7 @@ img {
   display: inline-block;
   min-width: 160px;
   height: 40px;
-  /* padding: 12px 20px; */
+  padding: 12px 20px;
   border: 1px solid #ff6c00;
   border-radius: 25px;
   text-align: center;
@@ -99,10 +101,31 @@ img {
 }
 
 /* -----------------Header------------------------- */
+
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
   background-color: grey;
+}
+
+.header-flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  margin-left: 131px;
+  display: flex;
+  gap: 30px;
+}
+
+.contact-list {
+  margin-left: auto;
 }
 
 .header-link,
@@ -122,10 +145,21 @@ img {
 
 .header-btn {
   color: var(--main-btn-color);
+  margin-left: 40px;
 }
 /* -----------------------Hero------------------------ */
-.hero {
+
+/* .hero {
   background-color: grey;
+} */
+
+.hero-container {
+  display: flex;
+}
+
+.hero-list {
+  width: 100px;
+  background-color: #fff;
 }
 
 .hero-link {
@@ -141,8 +175,10 @@ img {
   color: var(--accent-color);
 }
 
-.hero-container {
+.hero-content {
   padding: 272px 100px 208px;
+  background-color: grey;
+  flex-grow: 1;
   /* margin-top: 272px;
   margin-left: 100px;
   margin-right: 100px;
@@ -173,6 +209,24 @@ img {
 }
 
 /* -----------------------About------------------------ */
+
+.about-main-container {
+  display: flex;
+  gap: 30px;
+}
+
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+
+.about-item {
+  min-width: 270px;
+}
+
+.about-content-container {
+  max-width: 470px;
+}
 
 .about-primary-text {
   margin-bottom: 20px;
@@ -222,9 +276,25 @@ img {
   color: var(--main-title-color);
 }
 
+.prices-list-container {
+  display: flex;
+  justify-content: center;
+}
+
 .prices-list {
-  padding: 30px 20px;
+  padding: 30px 40px;
   outline: 2px solid tomato;
+  width: calc(100% / 2);
+}
+
+.prices-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.prices-item:last-child {
+  margin-bottom: 0;
 }
 
 .prices-item-text {
@@ -298,6 +368,15 @@ img {
   color: #303030;
 }
 
+.barbers-list {
+  display: flex;
+  gap: 30px;
+}
+
+.barbers-item {
+  flex-basis: calc((100% - 2 * 30px) / 3);
+}
+
 .barbers-item-content {
   margin-top: 30px;
   /* padding-top: 30px; */
@@ -323,6 +402,12 @@ img {
   color: var(--accent-color);
 }
 
+.barbers-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 .barbers-soc-link {
   width: 44px;
   height: 44px;
@@ -336,6 +421,20 @@ img {
 .gallery-text {
   margin-bottom: 44px;
   color: #303030;
+}
+
+.gallery-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  /* margin-right: -30px;
+  margin-bottom: -30px; */
+}
+
+.gallery-item {
+  width: calc(100% - 90px) / 4;
+  /* margin-right: 30px;
+  margin-bottom: 30px; */
 }
 
 /* -----------------------ONLINE------------------------ */
