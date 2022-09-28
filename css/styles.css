@@ -456,7 +456,8 @@ img {
   /* color: #303030; */
 }
 
-.barbers-soc-link:hover .barbers-soc-icon {
+.barbers-soc-link:hover .barbers-soc-icon,
+.barbers-soc-link:focus .barbers-soc-icon {
   fill: var(--accent-color);
 }
 
