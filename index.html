@@ -22,7 +22,9 @@
       <div class="container header-flex-container">
         <nav class="main-nav">
           <a class="header-logo" href="./index.html">
-            <img src="./images/logo.svg" alt="barbershop logo" />
+            <svg class="logo" width="68" height="55">
+              <use href="./images/symbol-defs.svg#icon-logo"></use>
+            </svg>
           </a>
           <ul class="header-list list">
             <li class="header-item"><a class="header-link link" href="#">About</a></li>
@@ -330,34 +332,38 @@
           </ul>
         </div>
       </section>
-      <section class="online">
-        <h2 class="online-title section-title">Online-booking</h2>
-      </section>
-      <section class="contacts">
-        <h2 class="contacts-title section-title">Contacts</h2>
-        <address class="contacts-address">
-          <a
-            class="contacts-address-link link"
-            href="https://goo.gl/maps/8B9NFvkaj7TqQyVm8"
-            target="_blank"
-            rel="noopener norefferer nofollow"
-            >st. Vasilksvka, 7A<br />
-            Kiyv, 08132</a
-          >
-          <ul class="contacts-list list">
-            <li class="contacts-item">
-              <a class="contacts-item-link link" href="tel:+380441111111">+38 044 111 11 11</a>
-            </li>
-            <li class="contacts-item">
-              <a class="contacts-item-link" href="mailto:barbershop@email.com"
-                >barbershop@email.com</a
+      <div class="sections-wrap">
+        <div class="container sections-flex-container">
+          <section class="online">
+            <h2 class="online-title section-title">Online-booking</h2>
+          </section>
+          <section class="contacts">
+            <h2 class="contacts-title section-title">Contacts</h2>
+            <address class="contacts-address">
+              <a
+                class="contacts-address-link link"
+                href="https://goo.gl/maps/8B9NFvkaj7TqQyVm8"
+                target="_blank"
+                rel="noopener norefferer nofollow"
+                >st. Vasilksvka, 7A<br />
+                Kiyv, 08132</a
               >
-            </li>
-          </ul>
-        </address>
-        <p class="contacts-primary-text">Working hours</p>
-        <p class="contacts-secondary-text">Every day from 9:00 to 22:00</p>
-      </section>
+              <ul class="contacts-list list">
+                <li class="contacts-item">
+                  <a class="contacts-item-link link" href="tel:+380441111111">+38 044 111 11 11</a>
+                </li>
+                <li class="contacts-item">
+                  <a class="contacts-item-link" href="mailto:barbershop@email.com"
+                    >barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <p class="contacts-primary-text">Working hours</p>
+            <p class="contacts-secondary-text">Every day from 9:00 to 22:00</p>
+          </section>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <p class="footer-copy">&copy; Copyright 2020</p>
