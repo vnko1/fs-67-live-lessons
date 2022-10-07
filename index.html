@@ -13,8 +13,13 @@
     />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -37,29 +42,38 @@
         </nav>
         <div class="contact-list">
           <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-          <button class="header-btn btn" type="button">Online-booking</button>
+          <button class="header-btn btn" data-modal-open type="button">Online-booking</button>
         </div>
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="container hero-container">
-          <ul class="hero-list list">
-            <li class="hero-item">
-              <a class="hero-link link" href="#" target="_blank" rel="noopener noreferrer nofollow"
-                >Instagram</a
-              >
-            </li>
-            <li class="hero-item">
-              <a class="hero-link link" href="#" target="_blank" rel="noopener noreferrer nofollow"
-                >Youtube</a
-              >
-            </li>
-          </ul>
-
+          <div class="hero-list-container">
+            <ul class="hero-list list">
+              <li class="hero-item">
+                <a
+                  class="hero-link link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="hero-item">
+                <a
+                  class="hero-link link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
           <div class="hero-content">
             <p class="hero-primary-text section-primary-text">A hair salon for men in Kyiv</p>
-            <h1 class="hero-title">BarberShop</h1>
+            <h1 class="hero-title animate__animated animate__heartBeat">BarberShop</h1>
             <p class="hero-secondary-text">
               We are experts in trendy men`s haircuts.
               <!--<br />?-->
@@ -141,7 +155,7 @@
       </section>
       <section class="benefits section">
         <div class="container benefits-container">
-          <ul class="benefits-list list">
+          <ul class="benefits-list list" data-aos="fade-up-right">
             <li class="benefits-item">
               <p class="benefits-item-primary-text"><span>600</span></p>
               <!--tag p - тут можна і без цього тегу, а тільки tag span, але якщо залишити поза увагою css оформлення, то семантично правильним буде tag p-->
@@ -380,5 +394,19 @@
         </li>
       </ul>
     </footer>
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button class="modal-btn" data-modal-close>
+          <svg class="modal-icon" width="18" height="18">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
