@@ -1,0 +1,17 @@
+.sections-wrap {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 130px;
+  padding-bottom: 120px;
+  background-color: #191c26;
+  background-image: url(../images/contacts-bg.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: calc(50% - 15px) 100%;
+}
+
+.sections-flex-container {
+  display: flex;
+  justify-content: space-between;
+}

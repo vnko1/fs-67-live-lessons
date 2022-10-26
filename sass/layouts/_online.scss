@@ -1,0 +1,118 @@
+.online {
+  width: calc(50% + 15px);
+}
+
+.online-title {
+  margin-left: 30px;
+  margin-bottom: 44px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  opacity: 0.1;
+  transition: opacity 250ms linear;
+
+  .online-form:focus-within & {
+    opacity: 1;
+  }
+}
+
+.online-label-container {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 44px;
+}
+
+.online-label {
+  position: relative;
+  display: inline-block;
+}
+
+.online-input {
+  width: 270px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  outline: transparent;
+  transform: border-bottom-color 1250ms linear;
+}
+
+.online-label-text {
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+  transition: transform 250ms linear, color 250ms linear;
+}
+
+.online-label-textarea {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 44px;
+}
+
+.online-textarea {
+  width: 570px;
+  height: 76px;
+  padding: 0;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  outline: transparent;
+}
+
+.online-textarea-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+  transition: transform 250ms linear, color 250ms linear;
+}
+
+.online-input:focus + .online-label-text,
+.online-input:not(:placeholder-shown) + .online-label-text,
+.online-textarea:focus + .online-textarea-text,
+.online-textarea:not(:placeholder-shown) + .online-textarea-text {
+  transform: translateY(-100%);
+}
+
+.online-input:focus,
+.online-input:focus + .online-label-text,
+.online-input:not(:placeholder-shown),
+.online-input:not(:placeholder-shown) + .online-label-text,
+.online-textarea:focus,
+.online-textarea:focus + .online-textarea-text,
+.online-textarea:not(:placeholder-shown),
+.online-textarea:not(:placeholder-shown) + .online-textarea-text {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.online-btn {
+  display: block;
+  color: var(--main-btn-color);
+}
