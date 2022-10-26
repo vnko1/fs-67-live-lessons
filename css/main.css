@@ -46,7 +46,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid tomato; */
 }
 
 body {
@@ -94,10 +93,8 @@ body {
   display: inline-block;
   min-width: 160px;
   height: 40px;
-  /* padding: 12px 20px; */
   border: 1px solid #ff6c00;
   border-radius: 25px;
-  /* text-align: center; */
   transition: background-color 250ms linear, color 250ms linear;
   background-color: transparent;
   font-family: inherit;
@@ -135,7 +132,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
-  /* height: 581px; */
   padding: 40px;
   transition: transform 300ms linear;
   background-color: #fff;
@@ -678,7 +674,7 @@ body {
 
 .barbers-soc-icon {
   fill: #303030;
-  transition: fill 260ms linear;
+  transition: fill 250ms linear;
 }
 .barbers-soc-link:hover .barbers-soc-icon, .barbers-soc-link:focus .barbers-soc-icon {
   fill: var(--accent-color);
