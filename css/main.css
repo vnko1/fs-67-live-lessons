@@ -109,6 +109,12 @@ body {
   color: var(--main-btn-color);
   background-color: var(--accent-color);
 }
+.btn--light {
+  color: var(--accent-color);
+}
+.btn--dark {
+  color: var(--secondary-btn-color);
+}
 
 .backdrop {
   position: fixed;
@@ -305,28 +311,28 @@ body {
   padding-bottom: 32px;
 }
 
-.header-flex-container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.main-nav {
+.nav {
   display: flex;
   align-items: center;
 }
 
-.header-list {
+.header__menu {
   margin-left: 131px;
   display: flex;
   gap: 30px;
 }
 
-.contact-list {
+.header__connect {
   margin-left: auto;
 }
 
-.header-link,
-.header-tel {
+.menu__link,
+.connect__tel {
   transition: color 250ms linear;
   font-style: normal;
   font-weight: 600;
@@ -336,21 +342,16 @@ body {
   color: var(--main-title-color);
 }
 
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
-}
-
-.header-btn {
+.connect__btn {
   color: var(--main-btn-color);
   margin-left: 40px;
 }
 
-.hero-container {
+.hero__container {
   display: flex;
 }
 
-.hero-list-container {
+.soc {
   display: flex;
   align-items: flex-end;
   width: 100px;
@@ -358,21 +359,21 @@ body {
   padding-bottom: 40px;
 }
 
-.hero-list {
+.soc__list {
   display: flex;
   align-items: center;
   gap: 40px;
   transform-origin: bottom left;
   transform: rotate(-90deg) translateY(100%);
 }
-.hero-list::before {
+.soc__list::before {
   content: "";
   width: 60px;
   height: 1px;
   background-color: #303030;
 }
 
-.hero-link {
+.soc__link {
   transition: color 250ms linear;
   font-weight: 600;
   font-size: 11px;
@@ -380,13 +381,11 @@ body {
   letter-spacing: 0.2em;
   color: var(--secondary-title-color);
 }
-
-.hero-link:hover,
-.hero-link:focus {
+.soc__link:hover, .soc__link:focus {
   color: var(--accent-color);
 }
 
-.hero-content {
+.hero__content {
   padding: 272px 100px 208px;
   background-color: grey;
   flex-grow: 1;
@@ -396,12 +395,12 @@ body {
   background-size: cover;
 }
 
-.hero-primary-text {
+.hero__primary-text {
   margin-bottom: 20px;
   color: rgba(157, 164, 189, 0.6);
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -411,7 +410,7 @@ body {
   color: var(--main-title-color);
 }
 
-.hero-secondary-text {
+.hero__secondary-text {
   max-width: 360px;
   font-size: 18px;
   line-height: 1.66;
@@ -419,35 +418,35 @@ body {
   color: #9da4bd;
 }
 
-.about-main-container {
+.about__container {
   display: flex;
   gap: 30px;
 }
 
-.about-list {
+.picture-list {
   display: flex;
   gap: 30px;
 }
 
-.about-item {
+.picture-list__item {
   min-width: 270px;
 }
 
-.about-content-container {
+.about__content {
   max-width: 470px;
 }
 
-.about-primary-text {
+.about__primary-text {
   margin-bottom: 20px;
   color: var(--secondary-title-color);
 }
 
-.about-title {
+.about__title {
   margin-bottom: 20px;
   color: var(--secondary-title-color);
 }
 
-.about-secondary-text {
+.about__secondary-text {
   margin-bottom: 20px;
   font-weight: 400;
   font-size: 18px;
@@ -456,17 +455,13 @@ body {
   color: #555555;
 }
 
-.about-text {
+.about__text {
   margin-bottom: 42px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: #555555;
-}
-
-.about-btn {
-  color: var(--secondary-btn-color);
 }
 
 .prices {
@@ -610,30 +605,30 @@ body {
   background-color: #f7f7f7;
 }
 
-.barbers-text {
+.barbers__text {
   margin-bottom: 20px;
   color: #303030;
 }
 
-.barbers-title {
+.barbers__title {
   margin-bottom: 44px;
   color: #303030;
 }
 
-.barbers-list {
+.cards {
   display: flex;
   gap: 30px;
 }
 
-.barbers-item {
+.cards__item {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.barbers-item-content {
+.cards__content {
   margin-top: 30px;
 }
 
-.barbers-item-title {
+.cards__title {
   margin-bottom: 8px;
   font-weight: 400;
   font-size: 18px;
@@ -643,7 +638,7 @@ body {
   color: #303030;
 }
 
-.barbers-item-text {
+.cards__text {
   margin-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
@@ -653,13 +648,13 @@ body {
   color: var(--accent-color);
 }
 
-.barbers-soc-list {
+.socials {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.barbers-soc-link {
+.socials__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -671,11 +666,11 @@ body {
   /* color: #303030; */
 }
 
-.barbers-soc-icon {
+.socials__icon {
   fill: #303030;
   transition: fill 250ms linear;
 }
-.barbers-soc-link:hover .barbers-soc-icon, .barbers-soc-link:focus .barbers-soc-icon {
+.socials__link:hover .socials__icon, .socials__link:focus .socials__icon {
   fill: var(--accent-color);
 }
 

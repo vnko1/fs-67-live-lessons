@@ -18,4 +18,11 @@
     color: var(--main-btn-color);
     background-color: var(--accent-color);
   }
+  &--light {
+    color: var(--accent-color);
+  }
+
+  &--dark {
+    color: var(--secondary-btn-color);
+  }
 }

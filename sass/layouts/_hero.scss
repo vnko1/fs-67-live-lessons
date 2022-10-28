@@ -1,8 +1,8 @@
-.hero-container {
+.hero__container {
   display: flex;
 }
 
-.hero-list-container {
+.soc {
   display: flex;
   align-items: flex-end;
   width: 100px;
@@ -10,7 +10,7 @@
   padding-bottom: 40px;
 }
 
-.hero-list {
+.soc__list {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -25,21 +25,21 @@
   }
 }
 
-.hero-link {
+.soc__link {
   transition: color 250ms linear;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: var(--secondary-title-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.hero-link:hover,
-.hero-link:focus {
-  color: var(--accent-color);
-}
-
-.hero-content {
+.hero__content {
   padding: 272px 100px 208px;
   background-color: grey;
   flex-grow: 1;
@@ -50,12 +50,12 @@
   background-size: cover;
 }
 
-.hero-primary-text {
+.hero__primary-text {
   margin-bottom: 20px;
   color: rgba(157, 164, 189, 0.6);
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 20px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -65,7 +65,7 @@
   color: var(--main-title-color);
 }
 
-.hero-secondary-text {
+.hero__secondary-text {
   max-width: 360px;
   font-size: 18px;
   line-height: 1.66;

@@ -2,30 +2,30 @@
   background-color: #f7f7f7;
 }
 
-.barbers-text {
+.barbers__text {
   margin-bottom: 20px;
   color: #303030;
 }
 
-.barbers-title {
+.barbers__title {
   margin-bottom: 44px;
   color: #303030;
 }
 
-.barbers-list {
+.cards {
   display: flex;
   gap: 30px;
 }
 
-.barbers-item {
+.cards__item {
   flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
-.barbers-item-content {
+.cards__content {
   margin-top: 30px;
 }
 
-.barbers-item-title {
+.cards__title {
   margin-bottom: 8px;
   font-weight: 400;
   font-size: 18px;
@@ -35,7 +35,7 @@
   color: #303030;
 }
 
-.barbers-item-text {
+.cards__text {
   margin-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
@@ -45,13 +45,13 @@
   color: var(--accent-color);
 }
 
-.barbers-soc-list {
+.socials {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.barbers-soc-link {
+.socials__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -63,12 +63,12 @@
   /* color: #303030; */
 }
 
-.barbers-soc-icon {
+.socials__icon {
   fill: #303030;
   transition: fill 250ms linear;
 
-  .barbers-soc-link:hover &,
-  .barbers-soc-link:focus & {
+  .socials__link:hover &,
+  .socials__link:focus & {
     fill: var(--accent-color);
   }
 }
