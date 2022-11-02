@@ -24,7 +24,10 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
   margin: 0;
+  width: 100%;
 }
 
 .visually-hidden {
@@ -54,14 +57,39 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 448px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .section {
-  padding: 120px 0;
+  padding: 84px 0;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 100px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 120px 0;
+  }
 }
 
 .section-title {
@@ -609,19 +637,46 @@ body {
   margin-bottom: 20px;
   color: #303030;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .barbers__text {
+    margin-left: 120px;
+  }
+}
 
 .barbers__title {
   margin-bottom: 44px;
   color: #303030;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .barbers__title {
+    margin-left: 120px;
+  }
+}
 
 .cards {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (max-width: 1199px) {
+  .cards {
+    gap: 64px;
+  }
 }
 
 .cards__item {
-  flex-basis: calc((100% - 60px) / 3);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .cards__item {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .cards__content {
@@ -663,7 +718,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* color: #303030; */
 }
 
 .socials__icon {
@@ -675,18 +729,33 @@ body {
 }
 
 .gallery-text {
-  margin-bottom: 44px;
+  margin-bottom: 71px;
   color: #303030;
+}
+@media screen and (min-width: 768px) {
+  .gallery-text {
+    margin-bottom: 44px;
+  }
 }
 
 .gallery-list {
   display: flex;
-  gap: 30px;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .gallery-item {
-  width: calc(100% - 90px)/4;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .gallery-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .sections-wrap {
