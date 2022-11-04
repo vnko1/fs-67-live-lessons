@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="nav">
           <a class="logo navigation__logo" href="./index.html">
@@ -31,6 +31,11 @@
               <use href="./images/symbol-defs.svg#icon-logo"></use>
             </svg>
           </a>
+          <button class="menu-open-button" type="button" data-menu-open>
+            <svg class="menu-open-button__icon" width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
           <ul class="header__menu menu list">
             <li class="menu__item"><a class="menu__link link" href="#">About</a></li>
             <li class="menu__item">
@@ -42,12 +47,55 @@
         </nav>
         <div class="connect header__connect">
           <a class="connect__tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-          <button class="connect__btn btn btn--light" data-modal-open type="button">
+          <button class="connect__btn btn btn--light" type="button" data-modal-open>
             Online-booking
           </button>
         </div>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-menu__container">
+          <button class="menu-close-button" data-menu-close>
+            <svg class="menu-close-button__icon" width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="menu-list list">
+            <li class="menu-list__item"><a class="menu-list__link link" href="#">About</a></li>
+            <li class="menu-list__item">
+              <a class="menu-list__link link" href="#">Services and prices</a>
+            </li>
+            <li class="menu-list__item"><a class="menu-list__link link" href="#">Barbers</a></li>
+            <li class="menu-list__item"><a class="menu-list__link link" href="#">Contacts</a></li>
+          </ul>
+          <div class="menu-connect">
+            <a class="menu-connect__tel link" href="tel:+380441111111">+38 044 111 11 11</a>
+            <button class="menu-connect__btn btn btn--dark" data-modal-open type="button">
+              Online-booking
+            </button>
+          </div>
+          <ul class="menu-soc__list list">
+            <li class="menu-soc__item">
+              <a
+                class="menu-soc__link link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Instagram</a
+              >
+            </li>
+            <li class="menu-soc__item">
+              <a
+                class="menu-soc__link link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <div class="container hero__container">
@@ -717,5 +765,6 @@
       AOS.init();
     </script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
