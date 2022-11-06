@@ -338,8 +338,18 @@ body {
 .header {
   position: absolute;
   width: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
+}
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -356,7 +366,13 @@ body {
 
 .nav {
   display: flex;
+  gap: 59px;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .nav {
+    gap: 131px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -370,19 +386,38 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header__menu {
-    margin-left: 131px;
     display: flex;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__menu {
     gap: 30px;
   }
 }
 
 .header__connect {
   display: none;
-  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .header__connect {
-    display: block;
+    display: flex;
+    margin-left: auto;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .header__connect {
+    padding-top: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__connect {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
   }
 }
 
@@ -404,7 +439,6 @@ body {
 
 .connect__btn {
   color: var(--main-btn-color);
-  margin-left: 40px;
 }
 
 .menu-open-button {
