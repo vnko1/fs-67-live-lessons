@@ -130,14 +130,37 @@
           </div>
         </div>
       </section>
-      <!-- <section class="about section">
+      <section class="about section">
         <div class="container about__container">
           <ul class="picture-list list">
             <li class="picture-list__item">
-              <img src="./images/sectionabout-1.jpg" alt="barbercuts" width="270" height="445" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/sectionabout-1-1200.jpg    1x,
+                    ./images/sectionabout-1-1200@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+
+                <source
+                  srcset="./images/sectionabout-1-768.jpg 1x, ./images/sectionabout-1-768@2x.jpg 2x"
+                  media="(min-width: 768px)" />
+                <img src="./images/sectionabout-1-768.jpg" alt="barbercuts"
+              /></picture>
             </li>
             <li class="picture-list__item">
-              <img src="./images/sectionabout-2.jpg" alt="haircuts" width="270" height="445" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/sectionabout-2-1200.jpg    1x,
+                    ./images/sectionabout-2-1200@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="./images/sectionabout-2-768.jpg 1x, ./images/sectionabout-2-768@2x.jpg 2x"
+                  media="(min-width: 768px)" />
+                <img src="./images/sectionabout-2-768.jpg" alt="haircuts"
+              /></picture>
             </li>
           </ul>
           <div class="about__content">
@@ -155,7 +178,7 @@
             <button class="btn btn--dark" type="button">Online-booking</button>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="prices section">
         <div class="container">
           <p class="prices-text section-primary-text">Spend your time with the best masters</p>
