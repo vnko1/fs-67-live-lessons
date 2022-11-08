@@ -200,6 +200,12 @@ body {
   overflow: hidden;
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -302,24 +308,25 @@ body {
   opacity: 1;
   background-color: rgba(9, 11, 19, 0.2);
   transition: opacity 300ms linear, visibility 300ms linear;
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  z-index: 2;
 }
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 528px;
+  max-width: 528px;
+  width: 100%;
   padding: 40px;
+  transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms linear;
   background-color: #fff;
   border-radius: 2px;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 528px;
+  }
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
@@ -409,12 +416,17 @@ body {
 
 .modal-form-textarea {
   resize: none;
-  width: 448px;
+  width: 100%;
   min-height: 120px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color var(--main-transition-duration-value) var(--main-timing-function-value);
+}
+@media screen and (min-width: 768px) {
+  .modal-form-textarea {
+    width: 448px;
+  }
 }
 .modal-form-textarea::-moz-placeholder {
   font-size: 12px;
