@@ -910,12 +910,17 @@ body {
 }
 
 .about__text {
-  margin-bottom: 46px;
+  margin-bottom: 42px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.8571428571;
   letter-spacing: 0.02em;
   color: #555555;
+}
+@media screen and (min-width: 768px) {
+  .about__text {
+    margin-bottom: 46px;
+  }
 }
 
 .prices {
