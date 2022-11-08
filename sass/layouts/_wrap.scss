@@ -2,16 +2,37 @@
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 130px;
-  padding-bottom: 120px;
+
   background-color: #191c26;
-  background-image: url(../images/contacts-bg.png);
-  background-position: right;
+  background-image: url(../images/contacts-bg-480.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/contacts-bg-480@2x.png);
+  }
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: calc(50% - 15px) 100%;
+  background-size: 100% 50%;
+  @media screen and (min-width: 786px) {
+    background-image: url(../images/contacts-bg-786.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/contacts-bg-786@2x.png);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 100px 0;
+    background-image: url(../images/contacts-bg-1200.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/contacts-bg-1200@2x.png);
+    }
+    background-size: calc(50% - 15px) 100%;
+    background-position: right;
+  }
 }
 
 .sections-flex-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
