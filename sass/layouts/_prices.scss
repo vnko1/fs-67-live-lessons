@@ -1,5 +1,22 @@
 .prices {
-  background-image: url(../images/prices-bg.png);
+  @media screen and (min-width: 480px) {
+    background-image: url(../images/prices-bg-480.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/prices-bg-480@2x.png);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/prices-bg-768.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/prices-bg-768@2x.png);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/prices-bg-1200.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/prices-bg-1200@2x.png);
+    }
+  }
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,25 +30,51 @@
 
 .prices-title {
   margin-bottom: 45px;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+    line-height: calc(49 / 42);
+  }
   color: var(--main-title-color);
 }
 
 .prices-list-container {
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (max-width: 1199px) {
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
 }
 
 .prices-list {
+  width: 100%;
   padding: 30px 20px;
-  width: calc(100% / 2);
 
-  &:first-child {
-    background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  @media screen and (max-width: 1199px) {
+    &:first-child {
+      padding-bottom: 20px;
+    }
+    &:last-child {
+      padding-top: 0;
+    }
   }
 
-  &:last-child {
-    background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 2);
+    &:first-child {
+      background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
+
+    &:last-child {
+      background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+    }
   }
 }
 
@@ -56,9 +99,14 @@
 
 .prices-item-text {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
+  font-size: 14px;
+  line-height: 20px;
+
   letter-spacing: 0.02em;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
   color: #9da4bd;
 }
 
