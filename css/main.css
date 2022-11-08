@@ -680,11 +680,16 @@ body {
 }
 
 .menu-connect__tel {
+  font-size: 14px;
   font-weight: 600;
-  font-size: 18px;
   line-height: 25px;
   letter-spacing: 0.1em;
   color: #303030;
+}
+@media screen and (min-width: 380px) {
+  .menu-connect__tel {
+    font-size: 18px;
+  }
 }
 
 .menu-soc__list {
