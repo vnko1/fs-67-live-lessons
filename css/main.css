@@ -1373,7 +1373,6 @@ body {
 }
 
 .online-title {
-  margin-left: 30px;
   margin-bottom: 44px;
   font-weight: 700;
   font-size: 42px;
@@ -1382,6 +1381,11 @@ body {
   color: #ffffff;
   opacity: 0.1;
   transition: opacity 250ms linear;
+}
+@media screen and (max-width: 767px) {
+  .online-title {
+    text-align: center;
+  }
 }
 .online-form:focus-within .online-title {
   opacity: 1;
@@ -1535,8 +1539,15 @@ body {
   }
 }
 
-.contacts {
-  width: 100%;
+@media screen and (max-width: 1199px) {
+  .contacts {
+    padding: 84px 0;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .contacts {
+    padding: 100px 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contacts {
@@ -1545,9 +1556,21 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .conacts-content-container {
+    display: flex;
+    gap: 100px;
+  }
+}
+
 .contacts-title {
-  color: var(--main-title-color);
   margin-bottom: 40px;
+  color: var(--main-title-color);
+}
+@media screen and (max-width: 767px) {
+  .contacts-title {
+    text-align: center;
+  }
 }
 
 .contacts-address {
