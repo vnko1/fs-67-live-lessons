@@ -947,17 +947,13 @@ body {
 }
 
 .prices {
+  background-image: url(../images/prices-bg-480.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #111319;
 }
-@media screen and (min-width: 480px) {
-  .prices {
-    background-image: url(../images/prices-bg-480.png);
-  }
-}
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .prices {
     background-image: url(../images/prices-bg-480@2x.png);
   }
