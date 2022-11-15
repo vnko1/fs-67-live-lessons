@@ -1139,11 +1139,21 @@ body {
 }
 
 .benefits-item-primary-text {
+  position: relative;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
   letter-spacing: 0.05em;
   color: #303030;
+}
+
+.benefits-item-primary-icon {
+  position: absolute;
+  top: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ff6c00;
 }
 
 .benefits-item-secondary-text {
